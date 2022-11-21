@@ -1,4 +1,4 @@
-// const bar = document.getElementById('search_history');
+
 
 // -----------------드롭다운
 function show(){
@@ -11,13 +11,7 @@ function show1(){
     bar1.classList.toggle('hide_bar1')
 }
 
-// bar.addEventListener('click', function () {
-//     if (e.currentTarget == e.target) {
-//         const hide_bar = document.getElementById('.hide_bar')
-//         hide_bar.style.visibility = 'hidden';
-//         // hide_bar.style.visibility = 'hidden';
-//     }
-// })
+
 // --------------------라이크버튼
 $(document).ready(function(){
     $('.content').click(function(){

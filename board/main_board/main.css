@@ -13,6 +13,10 @@ body{
 }
 
 
+.bigcontainer{
+    overflow: scroll;
+}
+
 .tittle{
     margin-bottom: 10px;
 }
@@ -115,7 +119,7 @@ body{
 .buttons {
     position: absolute;
     margin-bottom: 550px;
-    margin-left: 650px;
+    margin-left: 800px;
 }
 
 
@@ -204,7 +208,6 @@ body{
 .comment_list{
     width: 600px;
     height: 250px;
-    overflow: scroll;
 }
 
 .comment_input{

@@ -6,10 +6,10 @@ function show(){
     bar.classList.toggle('hide_bar')
 }
 
-function show1(){
-    const bar1 = document.getElementById('search_history1');
-    bar1.classList.toggle('hide_bar1')
-}
+// function show1(){
+//     const bar1 = document.getElementById('search_history1');
+//     bar1.classList.toggle('hide_bar1')
+// }
 
 
 // --------------------라이크버튼
@@ -39,24 +39,21 @@ document.addEventListener('click', function handleClickOutsideBox(event) {
     console.log('user clicked: ', event.target);
 
     const box = document.getElementById('search_history');
-    const button = document.getElementById('search_input')
+    const button = document.getElementById('search_input');
+    
+    // 바깥클릭시 if문을 활용하고
+    // box 클레스에 hide_bar 가있으면 add_hide_bar
+    // bot 클레스에 hide_bar 있으면 do nothing
 
     if (!box.contains(event.target) && !button.contains(event.target) ) {
         box.classList.toggle('hide_bar');
     }
 });
 
-document.addEventListener('click', function handleClickOutsideBox(event) {
-    // 👇️ the element the user clicked
-    console.log('user clicked: ', event.target);
 
-    const box1 = document.getElementById('search_history1');
-    const button1 = document.getElementById('search_input1')
+// ====================댓글메뉴hide
 
-    if (!box1.contains(event.target) && !button1.contains(event.target) ) {
-        box1.classList.toggle('hide_bar1');
-    }
-});
+
 
 
 //   && << 둘다 true일때 실행되라
@@ -64,7 +61,7 @@ document.addEventListener('click', function handleClickOutsideBox(event) {
 
 // const goboard = 
 
-// function next(event){
-//     event.preventDefault()
-//     handleLocation
-// }
+function next(event){
+    event.preventDefault()
+    // handleLocation
+}

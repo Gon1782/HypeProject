@@ -427,3 +427,6 @@ body{
     }
 }
 
+.hide_bar1.hidden{
+    visibility: hidden;
+}

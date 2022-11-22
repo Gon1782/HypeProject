@@ -55,10 +55,15 @@ document.addEventListener('click', function handleClickOutsideBox(event) {
     
         const box1 = document.getElementById('search_history1');
         const button1 = document.getElementById('search_input1');
-        const isBoxShowing1 = !box1.classList.contains('hide_bar1');
-        const isButtonClicked1 = button1.contains(event.target);
         
-    
+        // let isBoxShowing1 = false;
+        // if(){
+        
+        // }
+        const isBoxShowing1 = box1 ? !box1.classList.contains('hide_bar1') : false;
+        const isButtonClicked1 =button1 ? button1.contains(event.target) : false;
+        
+
         //if 문에서 false가 나오면 return으로 아무것도 반환하지않는다
         if(isBoxShowing1 && !isButtonClicked1 ){
             box1.classList.add('hide_bar1');
@@ -79,7 +84,7 @@ function comment_modifyed(){
     console.log(comment_text)
 
     const comment_input_container = document.querySelector('.comment_input_container')
-    comment_input_container.style.display = 'block'
+    comment_input_container.style.display = 'flex'
     
     comment_text.style.display = 'none'
     
@@ -102,3 +107,11 @@ function comment_save(){
 
 }   
 
+// ============================commet_delete
+function comment_delete(event){
+    const comment_delete = document.querySelector('#comment_box');
+    comment_delete.parentNode.removeChild(comment_delete);
+}
+
+// var elem = document.querySelector('#some-element');
+//     elem.parentNode.removeChild(elem);
